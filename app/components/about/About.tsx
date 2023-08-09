@@ -24,9 +24,10 @@ const About = () => {
               </span>
             </h1>
             <p className="text-lg max-w-[400px]">
-              We develop strong brands, engaged communities, and kickass
-              strategies to achieve <span className="font-bold">your</span> big
-              business goals.
+              About Asquared Crypto: Innovators Redefining Business. Combining
+              tech and creativity, we craft solutions that break boundaries.
+              From engaged communities to strategic success, we drive
+              innovation. Join us in shaping the future.
             </p>
           </div>
         </div>

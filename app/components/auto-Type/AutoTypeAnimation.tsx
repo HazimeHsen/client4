@@ -5,16 +5,16 @@ const AutoTypeAnimation = () => {
     <div className="wrapper z-10">
       <ul className="dynamic-txts font-bold text-3xl z-10">
         <li>
-          <span>GRAVITY DEFYING</span>
+          <span>SPARKING INNOVATION</span>
         </li>
         <li>
-          <span>BIG AND TASTY</span>
+          <span>IGNITING CREATIVITY</span>
         </li>
         <li>
-          <span>MIND BENDING</span>
+          <span>FORGING THE FUTURE</span>
         </li>
         <li>
-          <span>TIME WARPING</span>
+          <span>EMBRACING POSSIBILITIES</span>
         </li>
       </ul>
     </div>
