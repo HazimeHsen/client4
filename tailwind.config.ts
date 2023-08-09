@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        "Global-primary": "#F7931E",
+        "Global-primary": "#cab169",
         "Global-secondary": "#111111",
         text: "#999999",
       },

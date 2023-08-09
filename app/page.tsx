@@ -14,7 +14,6 @@ export default function Home() {
       <About />
       <WhatWeDo />
       <Solution />
-      <LogoSlideShow />
       <ContactUs />
     </div>
   );

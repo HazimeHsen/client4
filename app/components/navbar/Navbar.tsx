@@ -2,6 +2,7 @@
 import React from "react";
 import { Navbar, Typography, Button, Collapse } from "@material-tailwind/react";
 import { AiOutlineTwitter } from "react-icons/ai";
+import Image from "next/image";
 export default function NavbarDefault() {
   const [openNav, setOpenNav] = React.useState(false);
 
@@ -18,7 +19,7 @@ export default function NavbarDefault() {
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 transition-all duration-300 hover:text-[#F7931E] font-bold text md:border-b-0 border-b w-full text-center">
+        className="p-1 transition-all duration-300 hover:text-[#cab169] font-bold text md:border-b-0 border-b w-full text-center">
         <a
           href="/"
           className="flex items-center w-full text-center justify-center">
@@ -29,33 +30,33 @@ export default function NavbarDefault() {
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 transition-all duration-300 hover:text-[#F7931E] font-bold text md:border-b-0 border-b w-full text-center">
+        className="p-1 transition-all duration-300 hover:text-[#cab169] font-bold text md:border-b-0 border-b w-full text-center">
         <a
           href="/#about"
           className="flex items-center w-full text-center justify-center">
           About
         </a>
       </Typography>
-      <Typography
+      {/* <Typography
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 transition-all duration-300 hover:text-[#F7931E] font-bold text md:border-b-0 border-b w-full text-center">
+        className="p-1 transition-all duration-300 hover:text-[#cab169] font-bold text md:border-b-0 border-b w-full text-center">
         <a
           href="/#ourwork"
           className="flex items-center w-full text-center justify-center">
           Our Work
         </a>
-      </Typography>
+      </Typography> */}
       <Typography
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 transition-all duration-300 hover:text-[#F7931E] font-bold text md:border-b-0 border-b w-full text-center">
+        className="p-1 transition-all duration-300 hover:text-[#cab169] font-bold text md:border-b-0 border-b w-full text-center">
         <a
           href="/#contact"
           className="flex items-center w-full text-center justify-center">
-          Contact
+          Contact Us
         </a>
       </Typography>
     </ul>
@@ -67,15 +68,21 @@ export default function NavbarDefault() {
         <Typography
           as="a"
           href="#"
-          className="mr-4 cursor-pointer py-1.5 font-medium">
-          Logo
+          className="mr-4 cursor-pointer py-1.5 font-medium w-[60px]  h-[60px] ">
+          <Image
+            src="/images/logo3.png"
+            alt="logo"
+            width={100}
+            height={80}
+            className="object-contain w-[60px] h-[60px] flex justify-center items-center "
+          />
         </Typography>
         <div className="hidden lg:block">{navList}</div>
         <Button
           variant="gradient"
           size="sm"
           fullWidth
-          className="mb-2 hidden lg:block w-fit p-1 bg-[#999999] transition-all duration-300 hover:bg-[#F7931E] rounded ">
+          className="mb-2 hidden lg:block w-fit p-1 bg-[#999999] transition-all duration-300 hover:bg-[#cab169] rounded ">
           <AiOutlineTwitter size={25} className="text-white fill-white" />
         </Button>
 

@@ -12,10 +12,15 @@ const Hero = () => {
             <div className="text-3xl">INNOVATIVE IDEAS</div>
             <AutoTypeAnimation />
             <div className="text-3xl font-bold ">SOLUTIONS</div>
-            <span className="h-[4px] w-[180px] bg-[#F7931E] mt-3"></span>
+            <span className="h-[4px] w-[180px] bg-[#cab169] mt-3"></span>
           </div>
           <div className="relative w-full md:w-[500px] h-[300px] mt-[20px] ">
-            <Image src="/images/hero.png" className="" alt="hero" fill />
+            <Image
+              src="/images/hero.jpg"
+              className="object-contain"
+              alt="hero"
+              fill
+            />
           </div>
         </div>
       </div>

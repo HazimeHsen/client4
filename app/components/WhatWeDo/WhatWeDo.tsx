@@ -50,8 +50,8 @@ const WhatWeDo = () => {
                     alt={info.title}
                   />
                 </div>
-                <div className="border-l-4 border-[#F7931E] pl-8 w-full">
-                  <h2 className="font-bold text-xl text-[#F7931E]">
+                <div className="border-l-4 border-[#cab169] pl-8 w-full">
+                  <h2 className="font-bold text-xl text-[#cab169]">
                     {info.title}
                   </h2>
                   <div className="flex flex-col justify-center font-semibold text-gray-500">

@@ -8,14 +8,9 @@ const Solution = () => {
       <Container>
         <div className="flex flex-col items-center md:flex-row justify-evenly ">
           <div className="mb-4">
-            <div className="text-3xl font-semibold">
-              <div>SOLUTIONS</div>
-              <div>CUSTOMIZED</div>
-              <div className="font-bold">FOR YOU</div>
+            <div className="text-xl font-semibold flex">
+              Frequently Asked Questions
             </div>
-            <p className="font-semibold mt-5">
-              Bark Media helps you through any stage of your business.
-            </p>
           </div>
           <Accordion />
         </div>

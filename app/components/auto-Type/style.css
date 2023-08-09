@@ -13,7 +13,7 @@
 .dynamic-txts li {
   overflow: hidden;
   list-style: none;
-  color: #f7931e;
+  color: #cab169;
   position: relative;
   top: 0;
   animation: slide 12s steps(4) infinite;
@@ -38,7 +38,7 @@
   height: 100%;
   width: 100%;
   background: white;
-  border-left: 2px solid #f7931e;
+  border-left: 2px solid #cab169;
   animation: typing 3s steps(10) infinite;
 }
 

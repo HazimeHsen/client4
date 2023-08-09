@@ -87,7 +87,7 @@ html {
   border-bottom: 1px solid #111111;
 }
 .accordion .accordion-item .active {
-  border-bottom: 1px solid #f7931e;
+  border-bottom: 1px solid #cab169;
 }
 .accordion button {
   position: relative;
@@ -105,13 +105,13 @@ html {
 .accordion button:hover,
 .accordion button:focus {
   cursor: pointer;
-  color: #f7931e;
+  color: #cab169;
 }
 .accordion button:hover::after,
 .accordion button:focus::after {
   cursor: pointer;
-  color: #f7931e;
-  border: 1px solid #f7931e;
+  color: #cab169;
+  border: 1px solid #cab169;
 }
 .accordion button .accordion-title {
   padding: 1em 1.5em 1em 0;
@@ -147,7 +147,7 @@ html {
   background: currentColor;
 }
 .accordion .active {
-  color: #f7931e;
+  color: #cab169;
 }
 .accordion .active .icon::after {
   width: 0;
