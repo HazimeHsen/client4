@@ -53,11 +53,11 @@ const WhatWeDo = () => {
                     alt={info.title}
                   />
                 </div>
-                <div className="md:w-3/4 w-full border-l-4 border-[#cab169] pl-8">
+                <div className="md:w-3/4 w-full ">
                   <h2 className="font-bold text-xl underline justify-start text-[#cab169] mb-4">
                     {info.title}:
                   </h2>
-                  <ul className="font-semibold text-gray-600">
+                  <ul className="font-semibold text-gray-600 pl-8">
                     {info.text.map((text, index) => (
                       <li className="mb-2 list-disc" key={index}>
                         {text}
