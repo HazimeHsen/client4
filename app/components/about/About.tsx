@@ -18,7 +18,7 @@ const About = () => {
             />
           </div>
           <div>
-            <p className="text-lg md:text-xl font-semibold leading-relaxed">
+            <p className="md:text-xl font-semibold leading-relaxed">
               About Asquared Crypto: Innovators Redefining Business. Combining
               technology and creativity, we craft solutions that break
               boundaries. From engaged communities to strategic success, we
