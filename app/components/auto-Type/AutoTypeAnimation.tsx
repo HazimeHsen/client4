@@ -3,7 +3,7 @@ import "./style.css";
 const AutoTypeAnimation = () => {
   return (
     <div className="wrapper z-10">
-      <ul className="dynamic-txts font-bold text-3xl z-10">
+      <ul className="dynamic-txts text-center font-bold text-xl z-10">
         <li>
           <span>SPARKING INNOVATION</span>
         </li>

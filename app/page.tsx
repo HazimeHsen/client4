@@ -11,9 +11,9 @@ export default function Home() {
   return (
     <div className="flex-grow">
       <Hero />
-      <About />
       <WhatWeDo />
       <Solution />
+      <About />
       <ContactUs />
     </div>
   );

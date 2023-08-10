@@ -4,30 +4,25 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <div id="about" className="bg-[#F1F1F1]">
+    <div id="about" className="bg-gray-100 py-10">
+      <h1 className="font-bold text-3xl text-center mb-8">About Us</h1>
       <Container>
-        <div className="w-full py-4 flex flex-col md:flex-row justify-evenly">
-          <div className="relative w-full h-[270px] md:w-[500px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div className="relative h-[250px]">
             <Image
               src="/images/about3.jpg"
-              className="object-contain"
               alt="about"
-              fill
+              layout="fill"
+              objectFit="cover"
+              className="rounded-lg"
             />
           </div>
           <div>
-            {" "}
-            <h1 className="font-semibold text-2xl my-5">
-              ABOUT{" "}
-              <span className="font-extrabold text-2xl text-[#cab169]">
-                Asquared Crypto
-              </span>
-            </h1>
-            <p className="text-lg max-w-[400px]">
+            <p className="text-lg md:text-xl font-semibold leading-relaxed">
               About Asquared Crypto: Innovators Redefining Business. Combining
-              tech and creativity, we craft solutions that break boundaries.
-              From engaged communities to strategic success, we drive
-              innovation. Join us in shaping the future.
+              technology and creativity, we craft solutions that break
+              boundaries. From engaged communities to strategic success, we
+              drive innovation. Join us in shaping the future.
             </p>
           </div>
         </div>
