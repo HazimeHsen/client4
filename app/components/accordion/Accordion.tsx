@@ -5,15 +5,16 @@ const Accordion = () => {
   const accordionItems = [
     {
       id: "accordion-button-1",
-      title: "Why is the moon sometimes out during the day?",
-      content: "Lorem ipsum dolor sit amet...",
+      title: "Stay Ahead in Web3 and Finance",
+      content:
+        "Embrace unbiased insights and unmatched news by joining our Telegram group today-NFA",
     },
     {
       id: "accordion-button-2",
-      title: "Why is the sky blue?",
-      content: "Lorem ipsum dolor sit amet...",
+      title: "Ready to Take a Gamble? ",
+      content:
+        "Join our Telegram group for high-risk, high-reward micro gem calls and seize the thrill of potential gains-NFA",
     },
-    // Add more items as needed
   ];
 
   const [activeIndex, setActiveIndex] = useState(-1);

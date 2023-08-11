@@ -87,8 +87,10 @@ const Hero = () => {
         <div
           className={`h-1 w-24 max-w-[6rem] md:max-w-[16rem] bg-[#cab169] mb-4 ${styles.slideIn}`}></div>
         <p className={`text-center text-gray-600 ${styles.fadeIn}`}>
-          Welcome to a world of possibilities where creativity meets technology.
-          Join us in making a difference.
+          At A² Crypto, our focus is on helping you navigate the crypto space
+          with confidence. We offer guidance tailored to your needs, ensuring
+          you have the tools to start, choose wisely, and optimize your crypto
+          ventures.
         </p>
       </div>
     </Container>
