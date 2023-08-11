@@ -19,7 +19,7 @@ export default function ReadMoreModal() {
         <Button className="bg-[#cab169]">Read more...</Button>
       </AlertDialogTrigger>
       <Container>
-        <AlertDialogContent className="text-black overflow-y-auto max-h-[100vh]">
+        <AlertDialogContent className="py-4 text-black overflow-y-auto max-h-[100vh]">
           <AlertDialogHeader>
             <AlertDialogTitle>About Us</AlertDialogTitle>
             <AlertDialogDescription className="text-black overflow-y-auto max-h[300px]">
