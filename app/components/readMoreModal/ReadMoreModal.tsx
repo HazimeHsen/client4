@@ -21,8 +21,8 @@ export default function ReadMoreModal() {
       <Container>
         <AlertDialogContent className="py-4 text-black overflow-y-auto max-h-[100vh]">
           <AlertDialogHeader>
-            <AlertDialogTitle>About Us</AlertDialogTitle>
-            <AlertDialogDescription className="text-black overflow-y-auto max-h[300px]">
+            <AlertDialogTitle className="pt-4">About Us</AlertDialogTitle>
+            <AlertDialogDescription className="text-black overflow-y-auto max-h[300px] py-4">
               <p className="md:text-xl text-start font-semibold text-sm leading-relaxed mb-4">
                 <span className="font-bold">
                   Greetings, I'm Anthony Antoun, the founder of A² Crypto
@@ -78,7 +78,7 @@ export default function ReadMoreModal() {
               </p>
             </AlertDialogDescription>
           </AlertDialogHeader>
-          <AlertDialogFooter>
+          <AlertDialogFooter className="pb-4">
             <AlertDialogCancel>close</AlertDialogCancel>
           </AlertDialogFooter>
         </AlertDialogContent>
