@@ -32,7 +32,7 @@ export default function NavbarDefault() {
         color="blue-gray"
         className="p-1 transition-all duration-300 hover:text-[#cab169] font-bold text md:border-b-0 border-b w-full text-center">
         <a
-          href="/#about"
+          href="/about"
           className="flex items-center w-full text-center justify-center">
           About
         </a>
