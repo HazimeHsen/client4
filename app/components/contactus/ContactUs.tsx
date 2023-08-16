@@ -32,7 +32,13 @@ const ContactUs = () => {
   return (
     <div id="contact" className="flex justify-center my-10">
       <div className="relative w-[90%] md:w-[75%] z-[1] rounded-lg  text-white bg-[#cab169] px-5 py-10  lg:-mr-14">
-        <h2 className="mb-12 text-3xl font-bold text-center">Contact us</h2>
+        <h2 className="text-3xl font-bold text-center">Contact us</h2>
+        <div className="w-full mb-10  text-center">
+          <a className="mb-2 text-blue-600" href="https://t.me/AsquaredNews">
+            Click here to join our Telegram group
+          </a>
+          <div>Telegram DM: @AsquaredCrypto</div>
+        </div>
         <form
           className="flex flex-col items-center w-full"
           onSubmit={handleSubmit}>
