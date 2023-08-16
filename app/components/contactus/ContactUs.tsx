@@ -8,9 +8,7 @@ const ContactUs = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 const router = useRouter();
-  const handleSubmit = async (event: React.FormEvent) => {
-    router.refresh();
-  };
+  const handleSubmit = async (event: React.FormEvent) => {};
 
   return (
     <div id="contact" className="flex justify-center my-10">
@@ -27,6 +25,9 @@ const router = useRouter();
           onSubmit={handleSubmit}
           action={async (FormData) => {
             await sendEmail(FormData);
+            setEmail("");
+            setMessage("");
+            setName("");
           }}>
           <div className="relative mb-4 w-full flex justify-center ">
             <input
