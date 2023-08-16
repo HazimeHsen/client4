@@ -1,18 +1,42 @@
 "use client";
 import { sendEmail } from "@/app/sendEmail";
 import { useRouter } from "next/navigation";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+
+import { useInView } from "react-intersection-observer";
+import { motion, useAnimation } from "framer-motion";
 
 const ContactUs = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-const router = useRouter();
+  const router = useRouter();
   const handleSubmit = async (event: React.FormEvent) => {};
+
+  const controls = useAnimation();
+  const [ref, inView] = useInView({
+    triggerOnce: true, // Only trigger the animation once
+    threshold: 0.2, // Percentage of the element in view
+  });
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
 
   return (
     <div id="contact" className="flex justify-center my-10">
-      <div className="relative w-[90%] md:w-[75%] z-[1] rounded-lg  text-white bg-[#cab169] px-5 py-10  lg:-mr-14">
+      <motion.div
+        ref={ref}
+        initial="hidden"
+        animate={controls}
+        variants={{
+          visible: { opacity: 1, y: 0 },
+          hidden: { opacity: 0, y: 50 },
+        }}
+        transition={{ duration: 0.5 }}
+        className="relative w-[90%] md:w-[75%] z-[1] rounded-lg  text-white bg-[#cab169] px-5 py-10  lg:-mr-14">
         <h2 className="text-3xl font-bold text-center">Contact us</h2>
         <div className="w-full mb-10 text-sm text-center">
           <a className="mb-2 text-black" href="https://t.me/AsquaredNews">
@@ -72,7 +96,7 @@ const router = useRouter();
             Send
           </button>
         </form>
-      </div>
+      </motion.div>
     </div>
   );
 };

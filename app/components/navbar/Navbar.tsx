@@ -67,7 +67,7 @@ export default function NavbarDefault() {
       <div className="container mx-auto flex items-center text-[#999999] justify-between">
         <Typography
           as="a"
-          href="#"
+          href="/"
           className="mr-4 cursor-pointer py-1.5 font-medium w-[60px]  h-[60px] ">
           <Image
             src="/images/logo3.png"

@@ -1,13 +1,31 @@
-import React from "react";
+"use client";
+
+import React, { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+import { motion, useAnimation } from "framer-motion";
 import Image from "next/image";
 import Container from "../components/Container";
 const About = () => {
+  const controls = useAnimation();
+
+  useEffect(() => {
+    controls.start("visible");
+  }, [controls]);
   return (
-    <div id="about" className="py-10">
+    <motion.div
+      initial="hidden"
+      animate={controls}
+      variants={{
+        visible: { opacity: 1, y: 0 },
+        hidden: { opacity: 0, y: 50 },
+      }}
+      transition={{ duration: 0.5 }}
+      id="about"
+      className="py-10">
       <h1 className="font-bold text-3xl text-center mb-8">About Us</h1>
       <Container>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          <div className="relative h-[250px]">
+        <div className="">
+          <div className="relative h-[250px] my-5">
             <Image
               src="/images/about3.jpg"
               alt="about"
@@ -70,7 +88,7 @@ const About = () => {
           </div>
         </div>
       </Container>
-    </div>
+    </motion.div>
   );
 };
 

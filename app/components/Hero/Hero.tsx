@@ -9,7 +9,8 @@ const Hero = () => {
     <Container>
       <div
         className={`relative flex flex-col items-center justify-center heroSection ${styles.hero}`}>
-        <div className={`absolute top-10 right-5 animate-widthAnimation  `}>
+        <div
+          className={`absolute top-10 right-5 animate-widthAnimation ${styles.fadeIn} `}>
           <svg
             viewBox="-0.5 0 25 25"
             fill="none"
@@ -36,7 +37,8 @@ const Hero = () => {
             </g>
           </svg>
         </div>
-        <div className={`absolute bottom-3 left-3 animate-widthAnimation `}>
+        <div
+          className={`absolute bottom-3 left-3 animate-widthAnimation ${styles.fadeIn}`}>
           <svg
             viewBox="-0.5 0 25 25"
             fill="none"
@@ -63,7 +65,8 @@ const Hero = () => {
             </g>
           </svg>
         </div>
-        <div className={`absolute bottom-12 right-6 animate-widthAnimation `}>
+        <div
+          className={`absolute bottom-12 right-6 animate-widthAnimation ${styles.fadeIn}`}>
           <svg
             viewBox="-0.5 0 25 25"
             fill="none"
