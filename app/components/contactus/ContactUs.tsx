@@ -5,6 +5,8 @@ import React, { useState, useEffect } from "react";
 
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
+import { BsTelegram } from "react-icons/bs";
+import { AiOutlineMail } from "react-icons/ai";
 
 const ContactUs = () => {
   const [name, setName] = useState("");
@@ -38,11 +40,25 @@ const ContactUs = () => {
         transition={{ duration: 0.5 }}
         className="relative w-[90%] md:w-[75%] z-[1] rounded-lg  text-white bg-[#cab169] px-5 py-10  lg:-mr-14">
         <h2 className="text-3xl font-bold text-center">Contact us</h2>
-        <div className="w-full mb-10 text-sm text-center">
-          <a className="mb-2 text-black" href="https://t.me/AsquaredNews">
-            Click here to join our Telegram group
-          </a>
-          <div>Telegram DM: @AsquaredCrypto</div>
+        <div className="w-full mb-10 flex flex-col items-center">
+          <div className=" ">
+            <div className="flex items-center ">
+              Telegram:{" "}
+              <a className="ml-2 text-black" href="https://t.me/AsquaredCrypto">
+                {" "}
+                <BsTelegram size={20} className="w-fit" />
+              </a>
+            </div>
+            <div className="flex items-center ">
+              Email:{" "}
+              <a
+                className="ml-2 text-black"
+                href="mailto:Asquaredcrypto@gmail.com">
+                {" "}
+                <AiOutlineMail size={20} className="w-fit" />
+              </a>
+            </div>
+          </div>
         </div>
         <form
           className="flex flex-col items-center w-full"

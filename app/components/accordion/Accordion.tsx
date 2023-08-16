@@ -1,6 +1,7 @@
 "use client";
+import Link from "next/link";
 import React, { useState } from "react";
-
+import { BsTelegram } from "react-icons/bs";
 const Accordion = () => {
   const accordionItems = [
     {
@@ -8,12 +9,6 @@ const Accordion = () => {
       title: "Stay Ahead in Web3 and Finance",
       content:
         "Embrace unbiased insights and unmatched news by joining our Telegram group today-NFA",
-    },
-    {
-      id: "accordion-button-2",
-      title: "Ready to Take a Gamble? ",
-      content:
-        "Join our Telegram group for high-risk, high-reward micro gem calls and seize the thrill of potential gains-NFA",
     },
   ];
 
@@ -42,8 +37,18 @@ const Accordion = () => {
               <span className="icon" aria-hidden="true"></span>
             </button>
             {index === activeIndex && (
-              <div className="accordion-content pl-5">
-                <p>{item.content}</p>
+              <div className="my-2 pl-2">
+                <p className="relative md:text-base text-sm whitespace-nowrap">
+                  Embrace unbiased insights and unmatched news{" "}
+                  <span className="flex items-center">
+                    by joining our Telegram group today-NFA{" "}
+                    <a
+                      className="ml-2 w-fit h-fit flex "
+                      href="https://t.me/AsquaredNews">
+                      <BsTelegram size={20} className="w-fit" />
+                    </a>
+                  </span>
+                </p>
               </div>
             )}
           </div>

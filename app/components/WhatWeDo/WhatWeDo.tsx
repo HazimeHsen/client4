@@ -37,8 +37,9 @@ const WhatWeDo = () => {
       text: [
         "Our team includes experienced fundamental analysts who offer valuable insights into the underlying factors that drive the crypto market.",
         "Through in-depth research, we help you understand the projects and technologies you're investing in, enabling you to make well-informed decisions.",
+        "We specialize in uncovering hidden crypto gems with promising potential and lower market caps compared to their top competitors, guiding you to better understand and discover lucrative opportunities within the cryptocurrency market.",
       ],
-      image: "/images/3.gif",
+      image: "/images/4.gif",
     },
   ];
 
@@ -56,6 +57,7 @@ const WhatWeDo = () => {
 
   return (
     <motion.div
+      id="ourwork"
       ref={ref}
       initial="hidden"
       animate={controls}
@@ -77,7 +79,7 @@ const WhatWeDo = () => {
               you explore the exciting opportunities of the decentralized world.
             </p>
             {data.map((info) => (
-              <Card info={info} />
+              <Card key={info.image} info={info} />
             ))}
           </div>
         </div>

@@ -36,9 +36,9 @@ const Solution = () => {
               Explore Our Insights
             </h1>
             <p className="mt-2 text-gray-600 max-w-md">
-              Discover answers to some of the most common questions we receive.
-              If you're curious about certain concepts or phenomena, our FAQ
-              section is here to provide clarity and knowledge.
+              Uncover solutions to the inquiries you've been pondering, and if
+              you're intrigued by specific concepts or phenomena, feel free to
+              reach out to us with a message.
             </p>
           </div>
           <Accordion />
