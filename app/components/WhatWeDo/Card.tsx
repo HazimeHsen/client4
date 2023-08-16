@@ -5,7 +5,11 @@ import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import Image from "next/image";
 
-const Card = ({ info }) => {
+const Card = ({
+  info,
+}: {
+  info: { title: string; text: string[]; image: string };
+}) => {
   const controls = useAnimation();
   const [ref, inView] = useInView({
     triggerOnce: true, // Only trigger the animation once
