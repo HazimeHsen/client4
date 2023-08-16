@@ -68,13 +68,13 @@ export default function NavbarDefault() {
         <Typography
           as="a"
           href="/"
-          className="mr-4 cursor-pointer py-1.5 font-medium w-[60px]  h-[60px] ">
+          className="mr-4 cursor-pointer py-1.5 font-medium w-[90px]  h-[90px] ">
           <Image
             src="/images/logo3.png"
             alt="logo"
-            width={100}
-            height={80}
-            className="object-contain w-[60px] h-[60px] flex justify-center items-center "
+            width={120}
+            height={120}
+            className="object-contain w-[90px] h-[90px] flex justify-center items-center "
           />
         </Typography>
         <div className="hidden lg:block">{navList}</div>

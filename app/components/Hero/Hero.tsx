@@ -14,11 +14,11 @@ const Hero = () => {
           <Image src="/images/6.jpg" alt="hero" width={70} height={70} />
         </div>
         <div
-          className={`absolute bottom-3 left-3 animate-widthAnimation ${styles.fadeIn}`}>
+          className={`absolute bottom-11 left-3 animate-widthAnimation ${styles.fadeIn}`}>
           <Image src="/images/5.jpg" alt="hero" width={80} height={80} />
         </div>
         <div
-          className={`absolute bottom-12 right-6 animate-widthAnimation ${styles.fadeIn}`}>
+          className={`absolute bottom-12 right-5 animate-widthAnimation ${styles.fadeIn}`}>
           <Image src="/images/7.jpg" alt="hero" width={80} height={80} />
         </div>
         <h1

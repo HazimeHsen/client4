@@ -85,8 +85,8 @@ const About = () => {
               the complexities, seize opportunities, and build a future where
               crypto is not just a challenge, but a pathway to success.
             </p>
-            <p className="flex items-center">
-              Threads:
+            <p className="md:text-xl flex items-center font-semibold text-sm">
+              Founder’s Threads:
               <a
                 className="ml-2 w-fit block"
                 href="https://www.threads.net/@antounanthony">

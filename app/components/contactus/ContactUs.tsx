@@ -7,6 +7,7 @@ import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import { BsTelegram } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
+import Image from "next/image";
 
 const ContactUs = () => {
   const [name, setName] = useState("");
@@ -28,7 +29,20 @@ const ContactUs = () => {
   }, [controls, inView]);
 
   return (
-    <div id="contact" className="flex justify-center my-10">
+    <div
+      id="contact"
+      className="flex flex-wrap md:flex-nowrap justify-evenly items-center my-10 px-4">
+      <div className=" max-w-[500px]">
+        <Image
+          className="w-full rounded-lg"
+          src="/images/contact.jpg"
+          alt="contact"
+          objectFit="cover"
+          width={300}
+          height={500}
+        />
+      </div>
+
       <motion.div
         ref={ref}
         initial="hidden"
@@ -38,7 +52,7 @@ const ContactUs = () => {
           hidden: { opacity: 0, y: 50 },
         }}
         transition={{ duration: 0.5 }}
-        className="relative w-[90%] md:w-[75%] z-[1] rounded-lg  text-white bg-[#cab169] px-5 py-10  lg:-mr-14">
+        className="relative w-full md:w-[50%] md:mt-0 mt-5 z-[1] rounded-lg  text-white bg-[#cab169] px-5 py-10  lg:-mr-14">
         <h2 className="text-3xl font-bold text-center">Contact us</h2>
         <div className="w-full mb-10 flex flex-col items-center">
           <div className=" ">
@@ -53,7 +67,7 @@ const ContactUs = () => {
               Email:{" "}
               <a
                 className="ml-2 text-black"
-                href="mailto:Asquaredcrypto@gmail.com">
+                href="mailto:asquaredcrypto@gmail.com">
                 {" "}
                 <AiOutlineMail size={20} className="w-fit" />
               </a>
@@ -76,7 +90,7 @@ const ContactUs = () => {
               value={name}
               onChange={(e) => setName(e.target.value)}
               required
-              className="peer text-black block min-h-[auto] w-full md:w-1/2 rounded bg-white leading-[1.6] outline-none transition-all duration-200 ease-linear placeholder:text-[#99999] border border-white px-2 py-4 "
+              className="peer text-black block min-h-[auto] w-full  rounded bg-white leading-[1.6] outline-none transition-all duration-200 ease-linear placeholder:text-[#99999] border border-white px-2 py-4 "
               id="exampleInput90"
               placeholder="Name"
             />
@@ -88,7 +102,7 @@ const ContactUs = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              className="peer text-black block min-h-[auto] w-full md:w-1/2 rounded bg-white leading-[1.6] outline-none transition-all duration-200 ease-linear placeholder:text-[#99999] border border-white px-2 py-4 "
+              className="peer text-black block min-h-[auto] w-full  rounded bg-white leading-[1.6] outline-none transition-all duration-200 ease-linear placeholder:text-[#99999] border border-white px-2 py-4 "
               id="exampleInput91"
               placeholder="Email address"
             />
@@ -99,7 +113,7 @@ const ContactUs = () => {
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               required
-              className="peer text-black block min-h-[auto] w-full md:w-1/2 rounded bg-white leading-[1.6] outline-none transition-all duration-200 ease-linear placeholder:text-[#99999] border border-white px-2 py-4 "
+              className="peer text-black block min-h-[auto] w-full  rounded bg-white leading-[1.6] outline-none transition-all duration-200 ease-linear placeholder:text-[#99999] border border-white px-2 py-4 "
               id="exampleFormControlTextarea1"
               rows={3}
               placeholder="Your message"></textarea>
@@ -108,7 +122,7 @@ const ContactUs = () => {
             type="submit"
             data-te-ripple-init
             data-te-ripple-color="light"
-            className="inline-block w-full md:w-1/2 rounded bg-[#111111] px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] lg:mb-0">
+            className="inline-block w-full  rounded bg-[#111111] px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] lg:mb-0">
             Send
           </button>
         </form>
