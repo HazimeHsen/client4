@@ -54,26 +54,21 @@ const ContactUs = () => {
         transition={{ duration: 0.5 }}
         className="relative w-full md:w-[50%] md:mt-0 mt-5 z-[1] rounded-lg  text-white bg-[#cab169] px-5 py-10  lg:-mr-14">
         <h2 className="text-3xl font-bold text-center">Contact us</h2>
-        <div className="flex mt-3 items-center justify-center w-full">
-          <div className="-ml-5 w-full flex flex-col items-center mb-10 text-center ">
-            <div className="flex relative w-[130px] justify-center items-center ">
-              <span>Telegram:</span>
-              <a
-                className="ml-2 absolute -right-2 w-fit block max-w-[30px] text-black"
-                href="https://t.me/AsquaredCrypto">
-                <BsTelegram size={20} className="w-fit" />
-              </a>
-            </div>
-            <div className="flex relative w-[100px] justify-center items-center ">
-              Email:
-              <a
-                className="ml-2 absolute -right-2 w-fit block max-w-[30px] text-black"
-                href="mailto:asquaredcrypto@gmail.com">
-                <AiOutlineMail size={20} className="w-fit" />
-              </a>
-            </div>
+        <div className="w-full mb-10 text-center">
+          <div className="flex justify-center items-center">
+            <span className="mr-2">Telegram:</span>
+            <a className="text-black" href="https://t.me/AsquaredCrypto">
+              <BsTelegram size={20} className="w-fit" />
+            </a>
+          </div>
+          <div className="flex justify-center items-center">
+            <span className="mr-2">Email:</span>
+            <a className="text-black" href="mailto:asquaredcrypto@gmail.com">
+              <AiOutlineMail size={20} className="w-fit" />
+            </a>
           </div>
         </div>
+
         <form
           className="flex flex-col items-center w-full"
           onSubmit={handleSubmit}
