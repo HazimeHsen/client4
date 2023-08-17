@@ -54,8 +54,8 @@ const ContactUs = () => {
         transition={{ duration: 0.5 }}
         className="relative w-full md:w-[50%] md:mt-0 mt-5 z-[1] rounded-lg  text-white bg-[#cab169] px-5 py-10  lg:-mr-14">
         <h2 className="text-3xl font-bold text-center">Contact us</h2>
-        <div className="w-full mb-10 flex flex-col items-center">
-          <div className=" ">
+        <div className="w-full mb-10 ">
+          <div className="w-full flex flex-col justify-center items-center">
             <div className="flex items-center ">
               Telegram:{" "}
               <a className="ml-2 text-black" href="https://t.me/AsquaredCrypto">
