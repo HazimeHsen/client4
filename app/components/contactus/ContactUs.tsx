@@ -55,17 +55,23 @@ const ContactUs = () => {
         className="relative w-full md:w-[50%] md:mt-0 mt-5 z-[1] rounded-lg  text-white bg-[#cab169] px-5 py-10  lg:-mr-14">
         <h2 className="text-3xl font-bold text-center">Contact us</h2>
         <div className="w-full mb-10 text-center">
-          <div className="flex justify-center items-center">
-            <span className="mr-2">Telegram:</span>
-            <a className="text-black" href="https://t.me/AsquaredCrypto">
-              <BsTelegram size={20} className="w-fit" />
-            </a>
-          </div>
-          <div className="flex justify-center items-center">
-            <span className="mr-2">Email:</span>
-            <a className="text-black" href="mailto:asquaredcrypto@gmail.com">
-              <AiOutlineMail size={20} className="w-fit" />
-            </a>
+          <div className="grid grid-cols-2 place-items-center gap-2">
+            <div className="flex justify-center items-center">
+              <span>Telegram:</span>
+              <a className="ml-1 text-black" href="https://t.me/AsquaredCrypto">
+                <BsTelegram size={20} className="w-5 h-5" />{" "}
+                {/* Adjust width and height */}
+              </a>
+            </div>
+            <div className="flex items-center">
+              <span>Email:</span>
+              <a
+                className="ml-1 text-black"
+                href="mailto:asquaredcrypto@gmail.com">
+                <AiOutlineMail size={20} className="w-5 h-5" />{" "}
+                {/* Adjust width and height */}
+              </a>
+            </div>
           </div>
         </div>
 
