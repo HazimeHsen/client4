@@ -59,8 +59,12 @@ const ContactUs = () => {
             <div className="flex justify-center items-center">
               <span>Telegram:</span>
               <a className="ml-1 text-black" href="https://t.me/AsquaredCrypto">
-                <BsTelegram size={20} className="w-5 h-5" />{" "}
-                {/* Adjust width and height */}
+                <Image
+                  src="/images/telegram.png"
+                  alt="tel"
+                  width={20}
+                  height={20}
+                />
               </a>
             </div>
             <div className="flex items-center">
@@ -68,7 +72,12 @@ const ContactUs = () => {
               <a
                 className="ml-1 text-black"
                 href="mailto:asquaredcrypto@gmail.com">
-                <AiOutlineMail size={20} className="w-5 h-5" />{" "}
+                <Image
+                  src="/images/email.png"
+                  alt="tel"
+                  width={20}
+                  height={20}
+                />
                 {/* Adjust width and height */}
               </a>
             </div>

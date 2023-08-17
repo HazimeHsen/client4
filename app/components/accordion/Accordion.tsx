@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import { BsTelegram } from "react-icons/bs";
@@ -45,7 +46,12 @@ const Accordion = () => {
                     <a
                       className="ml-2 w-fit h-fit flex "
                       href="https://t.me/AsquaredNews">
-                      <BsTelegram size={20} className="w-fit" />
+                      <Image
+                        src="/images/telegram.png"
+                        alt="tel"
+                        width={20}
+                        height={20}
+                      />
                     </a>
                   </span>
                 </p>
