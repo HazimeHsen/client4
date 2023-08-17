@@ -56,18 +56,18 @@ const ContactUs = () => {
         <h2 className="text-3xl font-bold text-center">Contact us</h2>
         <div className="flex mt-3 items-center justify-center w-full">
           <div className="w-full flex justify-between max-w-[300px] mb-10 text-center ">
-            <div className="flex w-full justify-center items-center ">
+            <div className="flex relative w-[130px] justify-center items-center ">
               <span>Telegram:</span>
               <a
-                className="ml-2 w-fit block max-w-[30px] text-black"
+                className="ml-2 absolute -right-2 w-fit block max-w-[30px] text-black"
                 href="https://t.me/AsquaredCrypto">
                 <BsTelegram size={20} className="w-fit" />
               </a>
             </div>
-            <div className="flex w-full justify-center items-center ">
+            <div className="flex relative w-[100px] justify-center items-center ">
               Email:
               <a
-                className="ml-2 w-fit block max-w-[30px] text-black"
+                className="ml-2 absolute -right-2 w-fit block max-w-[30px] text-black"
                 href="mailto:asquaredcrypto@gmail.com">
                 <AiOutlineMail size={20} className="w-fit" />
               </a>
