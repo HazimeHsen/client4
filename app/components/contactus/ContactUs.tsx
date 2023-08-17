@@ -55,7 +55,7 @@ const ContactUs = () => {
         className="relative w-full md:w-[50%] md:mt-0 mt-5 z-[1] rounded-lg  text-white bg-[#cab169] px-5 py-10  lg:-mr-14">
         <h2 className="text-3xl font-bold text-center">Contact us</h2>
         <div className="flex mt-3 items-center justify-center w-full">
-          <div className="w-full flex flex-col items-center mb-10 text-center ">
+          <div className="-ml-5 w-full flex flex-col items-center mb-10 text-center ">
             <div className="flex relative w-[130px] justify-center items-center ">
               <span>Telegram:</span>
               <a
