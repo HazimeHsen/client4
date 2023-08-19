@@ -7,7 +7,7 @@ const Accordion = () => {
   const accordionItems = [
     {
       id: "accordion-button-1",
-      title: "Stay Ahead in Web3 and Finance",
+      title: "Stay Ahead in Web3 and Finance.",
       content:
         "Embrace unbiased insights and unmatched news by joining our Telegram group today-NFA",
     },

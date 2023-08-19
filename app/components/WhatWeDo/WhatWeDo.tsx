@@ -19,7 +19,7 @@ const WhatWeDo = () => {
     {
       title: "Choose Wisely",
       text: [
-        "With so many options in the crypto space, finding what suits you best is key",
+        "With so many options in the crypto space, finding what suits you best is key.",
         "We provide insights that empower you to make informed decisions, aligning your choices with your goals and aspirations.",
       ],
       image: "/images/2.gif",
