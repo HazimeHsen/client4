@@ -11,7 +11,7 @@ export const sendEmail = async (formData: FormData) => {
 
   resend.emails.send({
     from: "A² Crypto <onboarding@resend.dev>",
-    to: "Asquaredcrypto@gmail.com",
+    to: "asquaredcrypto@gmail.com",
     subject: "A² Crypto",
     reply_to: email,
     text: `name: ${name}\nmessage: ${message}`,
